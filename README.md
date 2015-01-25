@@ -1,7 +1,5 @@
 # Falling
 
-!!!! This is the branch for public changes !!!!
-
 This is a game about falling.
 How will you fall?
 Will you collect sky coins to buy sky gear?
