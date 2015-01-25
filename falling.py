@@ -70,15 +70,28 @@ startTime = time.mktime(t)
 word = raw_input('')
 endTime = time.mktime(t)
 if endTime - startTime > 3:
-    print 'Too slow! Sorry, no coin for you.'
+    print 'Too slow! Since this is the tutorial, you get a coin anyway.'
+    variables.coins = variables.coins + 1
 elif word.lower() != 'coin':
-    print 'Didn\'t type it correct! Sorry, no coin for you.'
-print 'Congrats you got the coin!'
-variables.coins = variables.coins + 1
+    print 'Didn\'t type it correct! Since this is the tutorial, you get a coin anyway.'
+    variables.coins = variables.coins + 1
+else:
+    print 'Congrats you got the coin!'
+    variables.coins = variables.coins + 1
 
-time.sleep(2)
+time.sleep(3)
 
 # The end of the begining
+os.system('cls')
+print 'From now on, you are on you\'re own!'
+print 'Here are some tips you will find useful:'
+print '-Buy stuff to slow your descent'
+print '-Keep grabbing sky coins'
+print '-Defend yourself against the sky enemies'
+print 'Good Luck! (you\'ll need it)'
+print ''
+
+x = raw_input('Press ENTER to continue')
 
 
 
