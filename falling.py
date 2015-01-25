@@ -68,6 +68,7 @@ print 'coin'
 t = time.gmtime()
 startTime = time.mktime(t)
 word = raw_input('')
+t = time.gmtime()
 endTime = time.mktime(t)
 if endTime - startTime > 3:
     print 'Too slow! Since this is the tutorial, you get a coin anyway.'
