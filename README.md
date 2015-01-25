@@ -1,5 +1,7 @@
 # Falling
 
+(Note: please use the public branch or fork it if you want to make changes. Do not change anything on the master branch. Thank you)
+
 This is a game about falling.
 How will you fall?
 Will you collect sky coins to buy sky gear?
