@@ -55,7 +55,7 @@ time.sleep(2)
 print '"Too bad," the pilot says as he shoves you off.'
 time.sleep(2)
 print 'As you fall, you yell, "I\'m going to sue youuuuuuuu..."'
-time.sleep(2)
+time.sleep(3)
 os.system('cls')
 
 print 'You are falling.'
@@ -64,8 +64,21 @@ print 'Suddenly, you see a coin! It is golden, and has a cloud on it.'
 time.sleep(3)
 print 'To get the coin, type this quick!'
 time.sleep(2)
-print 'COIN'
-t.start()
+print 'coin'
+t = time.gmtime()
+startTime = time.mktime(t)
+word = raw_input('')
+endTime = time.mktime(t)
+if endTime - startTime > 3:
+    print 'Too slow! Sorry, no coin for you.'
+elif word.lower() != 'coin':
+    print 'Didn\'t type it correct! Sorry, no coin for you.'
+print 'Congrats you got the coin!'
+variables.coins = variables.coins + 1
+
+time.sleep(2)
+
+# The end of the begining
 
 
 
